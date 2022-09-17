@@ -1790,7 +1790,7 @@ button {
 .main-swiper-pagination .swiper-pagination-bullet {
   position: relative;
   width: 178px;
-  height: 2px;
+  height: 0px;
   background: none;
   color: #fff;
   font-size: 28px;
