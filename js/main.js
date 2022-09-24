@@ -73,3 +73,40 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
   },
 
 });
+
+
+// Аккордеон
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.accordion');
+  const accordion = document.querySelector('.accordion');
+  const content1 = accordion.querySelector('.accordion__content');
+
+  if (accordion.classList.contains('open')) {
+    content1.style.maxHeight = content1.scrollHeight + 'px';
+  }
+
+  accordions.forEach(el => {
+    el.addEventListener('click', (e) => {
+      const self = e.currentTarget;
+      const control = self.querySelector('.accordion__control');
+      const content = self.querySelector('.accordion__content');
+
+
+
+      self.classList.toggle('open');
+
+
+
+      // Ниже код для скрин-ридеров
+      if (self.classList.contains('open')) {
+        control.setAttribute('aria-expanded', true);
+        content.setAttribute('aria-hidden', false);
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        control.setAttribute('aria-expanded', false);
+        content.setAttribute('aria-hidden', true);
+        content.style.maxHeight = null;
+      }
+    });
+  });
+});
