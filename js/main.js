@@ -110,3 +110,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+// Слайдер на странице коттеджа
+const cottageSwiper = new Swiper(".cottage-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 6,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+const cottageSwiper2 = new Swiper(".cottage-swiper2", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".cottage-swiper2-next",
+    prevEl: ".cottage-swiper2-prev",
+  },
+  thumbs: {
+    swiper: cottageSwiper,
+  },
+});
