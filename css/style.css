@@ -452,8 +452,8 @@ template {
 }
 
 .swiper-pointer-events.swiper-vertical {
-  -ms-touch-action: pan-x;
-  touch-action: pan-x;
+  -ms-touch-action: auto;
+  touch-action: auto;
 }
 
 .swiper-slide {
