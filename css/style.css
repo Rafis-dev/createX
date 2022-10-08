@@ -452,8 +452,8 @@ template {
 }
 
 .swiper-pointer-events.swiper-vertical {
-  -ms-touch-action: auto;
-  touch-action: auto;
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 
 .swiper-slide {
