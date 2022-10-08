@@ -1713,7 +1713,7 @@ button {
   color: #FFFFFF;
   margin-bottom: 60px;
   max-height: 263px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .info-slider__buttons {
